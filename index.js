@@ -72,12 +72,15 @@ for (let i = 0; i < info.length; i++) {
           // 分割三级菜单path，获取三级菜单目录名及文件名
           let threeLevelDirector = "";
           let threeLevelFileName = "";
+          let threeLevelPlus = "";
           if (threeLevelItem.path.split("/").length === 2) {
             threeLevelDirector = threeLevelItem.path.split("/")[0];
             threeLevelFileName = threeLevelItem.path.split("/")[1];
+            threeLevelPlus = threeLevelItem.path;
           } else {
             threeLevelDirector = threeLevelItem.path;
             threeLevelFileName = "index";
+            threeLevelPlus = threeLevelItem.path + "/index";
           }
           // 创建三级菜单对应的文件夹
           createDirector(
@@ -95,7 +98,7 @@ for (let i = 0; i < info.length; i++) {
           // 生成三级菜单
           routes[i].children[j].children[k] = {
             path: threeLevelItem.path,
-            component: `()=>import('@/views/${firstLevelItem.path}/${SecondaryItem.path}/${threeLevelItem.path}')`,
+            component: `()=>import('@/views/${firstLevelItem.path}/${SecondaryItem.path}/${threeLevelPlus}')`,
             name: threeLevelItemName,
             meta: { title: threeLevelItem.title },
             hidden: threeLevelItem.path.split("/").length === 1 ? false : true,
