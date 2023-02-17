@@ -32,7 +32,7 @@ for (let i = 0; i < info.length; i++) {
   let firstLevelItem = info[i];
   // 创建一级菜单对应的文件夹
   createDirector(`./views/${firstLevelItem.path}`);
-  // 一级菜单首字母大写
+  // 一级菜单name首字母大写
   let firstLevelItemName =
     firstLevelItem.path.slice(0, 1).toUpperCase() +
     firstLevelItem.path.slice(1);
@@ -88,7 +88,7 @@ for (let i = 0; i < info.length; i++) {
             `./views/${firstLevelItem.path}/${SecondaryItem.path}/${threeLevelDirector}/${threeLevelFileName}.vue`,
             vueFile
           );
-          // 三级菜单首字母大写
+          // 三级菜单name首字母大写
           let threeLevelItemName =
             threeLevelItem.path.slice(0, 1).toUpperCase() +
             threeLevelItem.path.slice(1);
