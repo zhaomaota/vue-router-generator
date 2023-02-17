@@ -3,9 +3,9 @@
 info包含三个属性，分别是：title（菜单名）、path（路径名）、children（子菜单）；
 2. 如果多个路由同属第三级菜单，但希望路径以四级的形式展示，可将path通过/分割，如路径为member/manage/info/add，但info/add和info是同一级菜单下的页面，就可以将add的path写为'info/add'。由于这样的页面通常会在菜单里被隐藏，所以最终生成的路由表会自动加上【hidden:true】属性。
 3. children是一个数组，内部包含多个对象，每个对象依然包含title、path和children三个属性（第三级不包含children）；
-4. 修改generatorRules.js内部的vueFile可以修改生成的vue文件模板；
+4. 修改generatorRules.js内部的vueFile可以修改生成的vue文件模板。
 
 
 # 运行说明：
 1. 终端输入npm init -y 初始化项目
-2. 终端输入node 即可在根目录下生成views文件夹和routes.txt文件，其中view文件夹是文件树，routes.txt是路由表。
+2. 终端输入node index.js 即可在根目录下生成views文件夹和routes.txt文件，其中view文件夹是文件树，routes.txt是路由表。
