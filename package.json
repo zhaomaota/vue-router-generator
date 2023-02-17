@@ -1,0 +1,15 @@
+{
+  "name": "vue-router-generator",
+  "version": "1.0.0",
+  "description": "vue-router路由生成器",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "node": "node index.js"
+  },
+  "keywords": [
+    "shop"
+  ],
+  "author": "zn",
+  "license": "MIT"
+}
