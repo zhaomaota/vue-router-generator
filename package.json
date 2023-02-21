@@ -11,5 +11,13 @@
     "shop"
   ],
   "author": "zn",
-  "license": "MIT"
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zhaomaota/vue-router-generator.git"
+  },
+  "bugs": {
+    "url": "https://github.com/zhaomaota/vue-router-generator/issues"
+  },
+  "homepage": "https://github.com/zhaomaota/vue-router-generator#readme"
 }

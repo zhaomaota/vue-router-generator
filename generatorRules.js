@@ -112,36 +112,52 @@ export let info = [
             path: "template",
           },
           {
+            title: "查看详情",
+            path: "detail",
+          },
+          {
+            title: "预览",
+            path: "preview",
+          },
+          {
+            title: "装修",
+            path: "mobile/edit",
+          },
+          {
+            title: "移动端装修",
+            path: "mobile/preview",
+          },
+          {
             title: "渠道商城SEO设置",
-            path: "infoManage",
+            path: "channelSeo",
           },
           {
             title: "新增SEO",
-            path: "infoManage",
+            path: "channelSeo/add",
           },
           {
             title: "修改",
-            path: "infoManage",
+            path: "channelSeo/edit",
           },
           {
             title: "查看",
-            path: "infoManage",
+            path: "channelSeo/detail",
           },
           {
             title: "业务员管理",
-            path: "infoManage",
+            path: "memberList",
           },
           {
             title: "新增业务员",
-            path: "infoManage",
+            path: "memberList/add",
           },
           {
             title: "查看业务员",
-            path: "infoManage",
+            path: "memberList/detail",
           },
           {
             title: "修改业务员",
-            path: "infoManage",
+            path: "memberList/edit",
           },
         ],
       },
